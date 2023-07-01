@@ -31,7 +31,7 @@ app.post("/register", async (req: Request, res: Response) => {
 
 app.post("/login", async (req: Request, res: Response) => {
   const { username, password } = req.body;
-  console.log(username, password);
+
   if (!username || !password) {
     return res
       .status(400)

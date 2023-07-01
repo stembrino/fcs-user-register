@@ -2,7 +2,8 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # customer UI pre-push stages
-yarn test --runInBand
+#TODO:temp --forceExit, fix this prblem. Use the `--detectOpenHandles` to detect async operations that kept running after all tests finished
+yarn test --forceExit
 
 # Commit will be aborted
 # exit 1
