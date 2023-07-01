@@ -2,7 +2,7 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # customer UI pre-push stages
-yarn test
+yarn test --runInBand
 
 # Commit will be aborted
 # exit 1
